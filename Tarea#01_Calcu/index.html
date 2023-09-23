@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <input type="text" id="entrada" style="BORDER:rgb(13, 5, 104) 4px ridge; FONT-SIZE: 8pt; FONT-FAMILY: Verdana">
+    <button onclick="borrarTodo('')" style="BORDER:rgb(6, 255, 184) 3px outset">AC</button>
+    <br>
+    <p style="FONT-SIZE: 3pt"></p>
+    <div>
+        <button onclick="escribir('7')" style="BORDER:rgb(3, 3, 3) 3px outset">7</button>
+        <button onclick="escribir('8')" style="BORDER:rgb(3, 3, 3) 3px outset">8</button>
+        <button onclick="escribir('9')" style="BORDER:rgb(3, 3, 3) 3px outset">9</button>
+
+        <button onclick="escribir('/')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset">÷</button>
+        <button onclick="borrar('')" style="BORDER:rgba(6, 255, 184) 3px outset">←</button>
+    </div>
+    <p style="FONT-SIZE: 3pt"></p>
+    <div>
+        <button onclick="escribir('4')" style="BORDER:rgb(3, 3, 3) 3px outset">4</button>
+        <button onclick="escribir('5')" style="BORDER:rgb(3, 3, 3) 3px outset">5</button>
+        <button onclick="escribir('6')" style="BORDER:rgb(3, 3, 3) 3px outset">6</button>
+        
+        <button onclick="escribir('*')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset">*</button>
+        <button onclick="escribir('**')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset">**</button>
+    </div>
+    <p style="FONT-SIZE: 3pt"></p>
+    <div>
+        <button onclick="escribir('1')" style="BORDER:rgb(3, 3, 3) 3px outset">1</button>
+        <button onclick="escribir('2')" style="BORDER:rgb(3, 3, 3) 3px outset">2</button>
+        <button onclick="escribir('3')" style="BORDER:rgb(3, 3, 3) 3px outset">3</button>
+
+        <button onclick="escribir('-')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset">-</button>
+        <button onclick="escribir('-1')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset">--</button>
+    </div>
+    <p style="FONT-SIZE: 3pt"></p>
+    <div>
+        <button onclick="escribir('0')" style="BORDER:rgb(3, 3, 3) 3px outset">0</button>
+        <button onclick="escribir('.')" style="BORDER:rgb(6, 255, 184) 3px outset">.</button>
+        <button onclick="calcular('=')" style="BORDER:rgba(6, 255, 184) 3px outset">=</button>
+        <button onclick="escribir('+')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset">+</button>
+        <button onclick="escribir('+1')" style="BORDER:rgba(255, 6, 64, 0.973) 3px outset;">++</button>
+    </div>
+    <br>
+    <button onclick="imprimirArreglo()" style="BORDER:rgba(164, 6, 255, 0.973) 3px outset;">[  ]</button>
+    <p id="arreglo" style="FONT-SIZE: 8pt; FONT-FAMILY: Times New Roman"></p>
+
+
+    <script type="text/javascript" src="funciones.js"></script>
+</body>
+</html>
